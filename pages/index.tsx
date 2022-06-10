@@ -63,6 +63,7 @@ const Home: NextPage = (): JSX.Element => {
         <div className={styles.grid}>
           {geoData.map((item: IGeoData, i: number) => (
             <a
+              key={i}
               href={`https://maps.google.com/?q=${item.lat},${item.long}`}
               target="_blank"
               rel="noreferrer noopener"
